@@ -90,7 +90,8 @@ serial = serial.Serial('COM25', 115200)
 serial.write(b'G90\n')
 
 # Camera initialization
-custom_video_format = "Y800 (1024x768)"
+#custom_video_format = "Y800 (1024x768)"
+custom_video_format = "RGB32 (1024x768)"
 image_folder = r"C:\Users\westontest\OneDrive - rit.edu\Fifth Year\MSD\WestonCameraTest\tisgrabber\samples\images\\"
 ic, hGrabber = initialize_camera_Test(video_format=custom_video_format, image_folder=image_folder)
 
@@ -99,6 +100,7 @@ image_counter = 1
 
 #gcode_commands = ['G10 P0 L20 X0 Y0 Z0\n']
 
+
 gcode_commands = [
 'G90 X0 Y0 Z0\n',
 'G90 X0 Y62\n',
@@ -106,31 +108,31 @@ gcode_commands = [
 'G90 X0 Y186\n',
 'G90 X0 Y248\n',
 'G90 X0 Y310\n',
-'G90 Z62\n',
+'G90 Z55\n',
 'G90 X0 Y248\n',
 'G90 X0 Y186\n',
 'G90 X0 Y124\n',
 'G90 X0 Y62\n',
 'G90 X0 Y0\n',
-'G90 Z124\n',
+'G90 Z120\n',
 'G90 X0 Y62\n',
 'G90 X0 Y124\n',
 'G90 X0 Y186\n',
 'G90 X0 Y248\n',
 'G90 X0 Y310\n',
-'G90 Z186\n',
+'G90 Z180\n',
 'G90 X0 Y248\n',
 'G90 X0 Y186\n',
 'G90 X0 Y124\n',
 'G90 X0 Y62\n',
 'G90 X0 Y0\n',
-'G90 Z248\n',
+'G90 Z245\n',
 'G90 X0 Y62\n',
 'G90 X0 Y124\n',
 'G90 X0 Y186\n',
 'G90 X0 Y248\n',
-'G90 X0 Y310\n',
-'G90 Z310\n',
+'G90 X0 Y300\n',
+'G90 Z290\n',
 'G90 X0 Y248\n',
 'G90 X0 Y186\n',
 'G90 X0 Y124\n',
